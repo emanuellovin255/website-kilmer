@@ -3,26 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KR-DENT · Laboratorio Dental Digital</title>
-  <meta name="description" content="KR-DENT: laboratorio dental especializado en CAD/CAM e impresión 3D. Zirconia, disilicato de litio, titanio, prótesis removible, ortodoncia y diseño digital." />
+  <title>KR-DENT · Laboratorio Dental Digital CAD/CAM e Impresión 3D</title>
+  <meta name="description" content="KR-DENT: laboratorio dental especializado en CAD/CAM e impresión 3D. Zirconia, disilicato de litio, titanio, prótesis removible, ortodoncia y diseño digital en STL." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://website-kilmer.vercel.app/" />
   <meta name="theme-color" content="#070b12" />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <meta name="color-scheme" content="dark" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CL" />
+  <meta property="og:site_name" content="KR-DENT" />
+  <meta property="og:title" content="KR-DENT · Laboratorio Dental Digital" />
+  <meta property="og:description" content="Tu visión, nuestra precisión. Laboratorio dental especializado en CAD/CAM e impresión 3D." />
+  <meta property="og:url" content="https://website-kilmer.vercel.app/" />
+  <meta property="og:image" content="https://website-kilmer.vercel.app/assets/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="KR-DENT · Laboratorio Dental Digital" />
+  <meta name="twitter:description" content="Laboratorio dental especializado en CAD/CAM e impresión 3D." />
+  <meta name="twitter:image" content="https://website-kilmer.vercel.app/assets/og.jpg" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;700&display=swap" /></noscript>
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "KR-DENT",
+    "description": "Laboratorio dental especializado en tecnología CAD/CAM e impresión 3D.",
+    "url": "https://website-kilmer.vercel.app/",
+    "image": "https://website-kilmer.vercel.app/assets/og.jpg",
+    "email": "kilmercadcam@gmail.com",
+    "areaServed": "Santiago, Chile",
+    "currenciesAccepted": "CLP, USD",
+    "knowsAbout": ["CAD/CAM", "Impresión 3D", "Zirconia", "Disilicato de litio", "Prótesis removible", "Ortodoncia", "Diseño digital STL"]
+  }
+  </script>
+  <script src="/script.js" defer></script>
 </head>
 <body>
+  <a class="skip" href="#main">Saltar al contenido</a>
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-glow" aria-hidden="true"></div>
 
   <!-- NAV -->
   <header class="nav" id="nav">
-    <a href="#inicio" class="brand" aria-label="KR-DENT inicio">
-      <span class="brand-mark">KR</span>
+    <a href="#inicio" class="brand">
+      <span class="brand-mark" aria-hidden="true">KR</span>
       <span class="brand-text">KR-DENT<small>Laboratorio dental</small></span>
     </a>
-    <nav class="nav-links" id="navLinks">
+    <nav class="nav-links" id="navLinks" aria-label="Principal">
       <a href="#nosotros">Nosotros</a>
       <a href="#arancel">Arancel</a>
       <a href="#diseno">Diseño digital</a>
@@ -31,24 +69,24 @@
       <a href="#requisitos">Requisitos</a>
       <a href="mailto:kilmercadcam@gmail.com" class="btn btn-sm">Enviar caso</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+    <button class="nav-toggle" id="navToggle" aria-label="Menú" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span>
     </button>
   </header>
 
-  <main>
+  <main id="main">
     <!-- HERO -->
     <section class="hero" id="inicio">
       <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="tag reveal">/// Soluciones digitales de alta calidad ///</p>
-          <h1 class="reveal">Tu visión,<br /><span class="grad">nuestra precisión.</span></h1>
-          <p class="lead reveal">Excelencia digital, resultados que transforman sonrisas. Laboratorio dental especializado en CAD/CAM e impresión 3D.</p>
-          <div class="hero-cta reveal">
+        <div class="hero-copy intro">
+          <p class="tag">/// Soluciones digitales de alta calidad ///</p>
+          <h1>Tu visión,<br /><span class="grad">nuestra precisión.</span></h1>
+          <p class="lead">Excelencia digital, resultados que transforman sonrisas. Laboratorio dental especializado en CAD/CAM e impresión 3D.</p>
+          <div class="hero-cta">
             <a href="#arancel" class="btn">Ver arancel</a>
             <a href="mailto:kilmercadcam@gmail.com?subject=Nuevo%20caso%20KR-DENT" class="btn btn-ghost">Enviar caso →</a>
           </div>
-          <ul class="chips reveal">
+          <ul class="chips">
             <li>Flujo digital</li>
             <li>Prótesis fija</li>
             <li>Prótesis removible</li>
@@ -56,7 +94,7 @@
           </ul>
         </div>
 
-        <div class="hero-visual reveal" aria-hidden="true">
+        <div class="hero-visual" aria-hidden="true">
           <div class="scan-frame">
             <span class="corner tl"></span><span class="corner tr"></span>
             <span class="corner bl"></span><span class="corner br"></span>
@@ -96,7 +134,7 @@
               </g>
             </svg>
             <div class="scan-line"></div>
-            <div class="readout r1"><b>CAD/CAM</b><span>Zirconia · 0.02 mm</span></div>
+            <div class="readout r1"><b>CAD/CAM</b><span>Zirconia · Disilicato</span></div>
             <div class="readout r2"><b>STL</b><span>Listo para fresado</span></div>
             <div class="readout r3"><b>3D PRINT</b><span>Resina · PMMA</span></div>
           </div>
@@ -111,30 +149,31 @@
     </section>
 
     <!-- VALORES -->
-    <section class="section" id="valores">
+    <section class="section" id="valores" aria-labelledby="valores-h">
       <div class="container">
+        <h2 id="valores-h" class="sr-only">Nuestros valores</h2>
         <div class="values">
           <article class="value reveal">
-            <div class="v-icon"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg></div>
-            <span class="v-num">01</span>
+            <div class="v-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg></div>
+            <span class="v-num" aria-hidden="true">01</span>
             <h3>Calidad</h3>
             <p>Materiales de primera línea y protocolos estrictos en cada etapa.</p>
           </article>
           <article class="value reveal">
-            <div class="v-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4"/></svg></div>
-            <span class="v-num">02</span>
+            <div class="v-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4"/></svg></div>
+            <span class="v-num" aria-hidden="true">02</span>
             <h3>Precisión</h3>
             <p>Tecnología digital y control en cada detalle del trabajo.</p>
           </article>
           <article class="value reveal">
-            <div class="v-icon"><svg viewBox="0 0 24 24"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M12 12l9-5M12 12v10M12 12L3 7"/></svg></div>
-            <span class="v-num">03</span>
+            <div class="v-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M12 12l9-5M12 12v10M12 12L3 7"/></svg></div>
+            <span class="v-num" aria-hidden="true">03</span>
             <h3>Innovación</h3>
             <p>Flujo CAD/CAM e impresión 3D en constante actualización.</p>
           </article>
           <article class="value reveal">
-            <div class="v-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-            <span class="v-num">04</span>
+            <div class="v-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <span class="v-num" aria-hidden="true">04</span>
             <h3>Compromiso</h3>
             <p>Cumplimiento de plazos en cada rehabilitación entregada.</p>
           </article>
@@ -171,19 +210,19 @@
           <p class="muted">Valores expresados en pesos chilenos (CLP). Arancel vigente · sujeto a modificación previo aviso.</p>
         </div>
 
-        <div class="tabs reveal" role="tablist" id="priceTabs">
-          <button role="tab" class="tab active" data-tab="zirconia">Zirconia</button>
-          <button role="tab" class="tab" data-tab="disilicato">Disilicato de litio</button>
-          <button role="tab" class="tab" data-tab="resina">Resina 3D</button>
-          <button role="tab" class="tab" data-tab="cromo">Cromo níquel / cobalto</button>
-          <button role="tab" class="tab" data-tab="titanio">Titanio colado</button>
-          <button role="tab" class="tab" data-tab="removible">Prótesis removible</button>
-          <button role="tab" class="tab" data-tab="ortodoncia">Ortodoncia</button>
+        <div class="tabs reveal" role="tablist" id="priceTabs" aria-label="Materiales">
+          <button role="tab" class="tab active" data-tab="zirconia" id="tab-zirconia" aria-controls="panel-zirconia" aria-selected="true" tabindex="0">Zirconia</button>
+          <button role="tab" class="tab" data-tab="disilicato" id="tab-disilicato" aria-controls="panel-disilicato" aria-selected="false" tabindex="-1">Disilicato de litio</button>
+          <button role="tab" class="tab" data-tab="resina" id="tab-resina" aria-controls="panel-resina" aria-selected="false" tabindex="-1">Resina 3D</button>
+          <button role="tab" class="tab" data-tab="cromo" id="tab-cromo" aria-controls="panel-cromo" aria-selected="false" tabindex="-1">Cromo níquel / cobalto</button>
+          <button role="tab" class="tab" data-tab="titanio" id="tab-titanio" aria-controls="panel-titanio" aria-selected="false" tabindex="-1">Titanio colado</button>
+          <button role="tab" class="tab" data-tab="removible" id="tab-removible" aria-controls="panel-removible" aria-selected="false" tabindex="-1">Prótesis removible</button>
+          <button role="tab" class="tab" data-tab="ortodoncia" id="tab-ortodoncia" aria-controls="panel-ortodoncia" aria-selected="false" tabindex="-1">Ortodoncia</button>
         </div>
 
         <div class="panels reveal">
           <!-- Zirconia -->
-          <div class="panel active" data-panel="zirconia">
+          <div class="panel active" data-panel="zirconia" id="panel-zirconia" role="tabpanel" aria-labelledby="tab-zirconia" tabindex="0">
             <div class="panel-title"><h3>Zirconia monolítica</h3><span class="badge">Convencional vs Digital</span></div>
             <table class="price-table cols-3">
               <thead><tr><th>Prestación</th><th>Convencional</th><th class="hl">Digital</th></tr></thead>
@@ -199,7 +238,7 @@
             </table>
           </div>
           <!-- Disilicato -->
-          <div class="panel" data-panel="disilicato">
+          <div class="panel" data-panel="disilicato" id="panel-disilicato" role="tabpanel" aria-labelledby="tab-disilicato" tabindex="0" hidden>
             <div class="panel-title"><h3>Disilicato de litio <em>(fresado)</em></h3><span class="badge">Convencional vs Digital</span></div>
             <table class="price-table cols-3">
               <thead><tr><th>Prestación</th><th>Convencional</th><th class="hl">Digital</th></tr></thead>
@@ -209,7 +248,7 @@
             </table>
           </div>
           <!-- Resina -->
-          <div class="panel" data-panel="resina">
+          <div class="panel" data-panel="resina" id="panel-resina" role="tabpanel" aria-labelledby="tab-resina" tabindex="0" hidden>
             <div class="panel-title"><h3>Resina impresa 3D</h3><span class="badge">Impresión 3D</span></div>
             <table class="price-table">
               <thead><tr><th>Prestación</th><th>Valor</th></tr></thead>
@@ -223,7 +262,7 @@
             </table>
           </div>
           <!-- Cromo -->
-          <div class="panel" data-panel="cromo">
+          <div class="panel" data-panel="cromo" id="panel-cromo" role="tabpanel" aria-labelledby="tab-cromo" tabindex="0" hidden>
             <div class="panel-title"><h3>Cromo níquel / Cromo cobalto</h3><span class="badge">Metal</span></div>
             <table class="price-table">
               <thead><tr><th>Prestación</th><th>Valor</th></tr></thead>
@@ -246,7 +285,7 @@
             </table>
           </div>
           <!-- Titanio -->
-          <div class="panel" data-panel="titanio">
+          <div class="panel" data-panel="titanio" id="panel-titanio" role="tabpanel" aria-labelledby="tab-titanio" tabindex="0" hidden>
             <div class="panel-title"><h3>Titanio colado</h3><span class="badge">Metal</span></div>
             <table class="price-table">
               <thead><tr><th>Prestación</th><th>Valor</th></tr></thead>
@@ -261,7 +300,7 @@
             </table>
           </div>
           <!-- Removible -->
-          <div class="panel" data-panel="removible">
+          <div class="panel" data-panel="removible" id="panel-removible" role="tabpanel" aria-labelledby="tab-removible" tabindex="0" hidden>
             <div class="panel-title"><h3>Prótesis removible</h3><span class="badge">Removible</span></div>
             <table class="price-table">
               <thead><tr><th>Prestación</th><th>Valor</th></tr></thead>
@@ -275,7 +314,7 @@
             </table>
           </div>
           <!-- Ortodoncia -->
-          <div class="panel" data-panel="ortodoncia">
+          <div class="panel" data-panel="ortodoncia" id="panel-ortodoncia" role="tabpanel" aria-labelledby="tab-ortodoncia" tabindex="0" hidden>
             <div class="panel-title"><h3>Ortodoncia</h3><span class="badge">Digital</span></div>
             <table class="price-table">
               <thead><tr><th>Prestación</th><th>Valor</th></tr></thead>
@@ -347,12 +386,12 @@
             <div class="implant-calc">
               <p class="card-foot">Ejemplos de barra Admodum</p>
               <div class="calc-row">
-                <button class="calc-btn" data-n="4">4 implantes</button>
-                <button class="calc-btn active" data-n="6">6 implantes</button>
+                <button type="button" class="calc-btn" data-n="4" aria-pressed="false">4 implantes</button>
+                <button type="button" class="calc-btn active" data-n="6" aria-pressed="true">6 implantes</button>
               </div>
               <div class="calc-out">
-                <div class="implants" id="implants"></div>
-                <b id="calcTotal">$ 60.000</b>
+                <div class="implants" id="implants" aria-hidden="true"></div>
+                <b id="calcTotal" aria-live="polite">$ 60.000</b>
               </div>
             </div>
           </div>
@@ -396,24 +435,24 @@
           <p class="muted">Ejemplos reales de casos resueltos en nuestro flujo digital. Cada diseño se entrega en archivo STL listo para impresión 3D o fresado, con vista previa para la aprobación del profesional antes de producir.</p>
         </div>
         <div class="gallery">
-          <figure class="shot g1 reveal" data-full="assets/casos/caso-1.png">
-            <img src="assets/casos/caso-1.png" alt="Arcada completa sobre dientes, encerado digital en oclusión" loading="lazy" />
+          <figure class="shot g1 reveal" data-full="/assets/casos/caso-1.webp">
+            <button type="button" class="shot-btn" aria-label="Ampliar imagen: Arcada completa sobre dientes, encerado digital en oclusión"><img src="/assets/casos/caso-1.webp" width="1112" height="502" decoding="async" alt="Arcada completa sobre dientes, encerado digital en oclusión" loading="lazy" /></button>
             <figcaption><b>Arcada completa sobre dientes</b><span>Encerado digital en oclusión, vista frontal</span></figcaption>
           </figure>
-          <figure class="shot g2 reveal" data-full="assets/casos/caso-2.png">
-            <img src="assets/casos/caso-2.png" alt="Prótesis híbrida sobre implantes, diseño monobloque" loading="lazy" />
+          <figure class="shot g2 reveal" data-full="/assets/casos/caso-2.webp">
+            <button type="button" class="shot-btn" aria-label="Ampliar imagen: Prótesis híbrida sobre implantes, diseño monobloque"><img src="/assets/casos/caso-2.webp" width="942" height="536" decoding="async" alt="Prótesis híbrida sobre implantes, diseño monobloque" loading="lazy" /></button>
             <figcaption><b>Prótesis híbrida sobre implantes</b><span>Diseño monobloque, vista vestibular</span></figcaption>
           </figure>
-          <figure class="shot g3 reveal" data-full="assets/casos/caso-3.png">
-            <img src="assets/casos/caso-3.png" alt="Diseño con modelo antagonista" loading="lazy" />
+          <figure class="shot g3 reveal" data-full="/assets/casos/caso-3.webp">
+            <button type="button" class="shot-btn" aria-label="Ampliar imagen: Diseño con modelo antagonista"><img src="/assets/casos/caso-3.webp" width="1299" height="845" decoding="async" alt="Diseño con modelo antagonista" loading="lazy" /></button>
             <figcaption><b>Diseño con modelo antagonista</b><span>Control de oclusión y espacio protésico</span></figcaption>
           </figure>
-          <figure class="shot g4 reveal" data-full="assets/casos/caso-4.png">
-            <img src="assets/casos/caso-4.png" alt="Rehabilitación completa sobre implantes" loading="lazy" />
+          <figure class="shot g4 reveal" data-full="/assets/casos/caso-4.webp">
+            <button type="button" class="shot-btn" aria-label="Ampliar imagen: Rehabilitación completa sobre implantes"><img src="/assets/casos/caso-4.webp" width="1081" height="769" decoding="async" alt="Rehabilitación completa sobre implantes" loading="lazy" /></button>
             <figcaption><b>Rehabilitación completa sobre implantes</b><span>Montaje superior e inferior en oclusión</span></figcaption>
           </figure>
-          <figure class="shot g5 reveal" data-full="assets/casos/caso-5.png">
-            <img src="assets/casos/caso-5.png" alt="Incrustaciones diseñadas en CAD y caso terminado" loading="lazy" />
+          <figure class="shot g5 reveal" data-full="/assets/casos/caso-5.webp">
+            <button type="button" class="shot-btn" aria-label="Ampliar imagen: Incrustaciones diseñadas en CAD y caso terminado"><img src="/assets/casos/caso-5.webp" width="922" height="407" decoding="async" alt="Incrustaciones diseñadas en CAD y caso terminado" loading="lazy" /></button>
             <figcaption><b>Del diseño al resultado clínico</b><span>Incrustaciones diseñadas en CAD y el caso terminado en boca</span></figcaption>
           </figure>
         </div>
@@ -461,7 +500,7 @@
           </div>
         </div>
         <div class="alert reveal">
-          <span class="alert-clock">12:00</span>
+          <span class="alert-clock" aria-hidden="true">12:00</span>
           <p>Toda entrega pasadas las <strong>12:00 hrs</strong> se considera hábil al día siguiente.</p>
         </div>
       </div>
@@ -513,7 +552,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <a href="#inicio" class="brand">
-        <span class="brand-mark">KR</span>
+        <span class="brand-mark" aria-hidden="true">KR</span>
         <span class="brand-text">KR-DENT<small>Laboratorio dental</small></span>
       </a>
       <p class="muted">Laboratorio dental · CAD/CAM · Impresión 3D</p>
@@ -522,12 +561,11 @@
   </footer>
 
   <!-- Lightbox -->
-  <div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada" hidden>
     <button class="lb-close" aria-label="Cerrar">×</button>
-    <img alt="" />
+    <img alt="" width="1200" height="800" />
     <p class="lb-cap"></p>
   </div>
 
-  <script src="script.js"></script>
 </body>
 </html>
