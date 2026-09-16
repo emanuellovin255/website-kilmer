@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KR-DENT · Laboratorio Dental Digital</title>
+  <meta name="description" content="KR-DENT: laboratorio dental especializado en CAD/CAM e impresión 3D. Zirconia, disilicato de litio, titanio, prótesis removible, ortodoncia y diseño digital." />
+  <meta name="theme-color" content="#070b12" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#inicio" class="brand" aria-label="KR-DENT inicio">
+      <span class="brand-mark">KR</span>
+      <span class="brand-text">KR-DENT<small>Laboratorio dental</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#arancel">Arancel</a>
+      <a href="#diseno">Diseño digital</a>
+      <a href="#casos">Casos</a>
+      <a href="#plazos">Plazos</a>
+      <a href="#requisitos">Requisitos</a>
+      <a href="mailto:kilmercadcam@gmail.com" class="btn btn-sm">Enviar caso</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="tag reveal">/// Soluciones digitales de alta calidad ///</p>
+          <h1 class="reveal">Tu visión,<br /><span class="grad">nuestra precisión.</span></h1>
+          <p class="lead reveal">Excelencia digital, resultados que transforman sonrisas. Laboratorio dental especializado en CAD/CAM e impresión 3D.</p>
+          <div class="hero-cta reveal">
+            <a href="#arancel" class="btn">Ver arancel</a>
+            <a href="mailto:kilmercadcam@gmail.com?subject=Nuevo%20caso%20KR-DENT" class="btn btn-ghost">Enviar caso →</a>
+          </div>
+          <ul class="chips reveal">
+            <li>Flujo digital</li>
+            <li>Prótesis fija</li>
+            <li>Prótesis removible</li>
+            <li>Ortodoncia</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="scan-frame">
+            <span class="corner tl"></span><span class="corner tr"></span>
+            <span class="corner bl"></span><span class="corner br"></span>
+            <svg class="tooth" viewBox="0 0 300 340" fill="none">
+              <defs>
+                <linearGradient id="tg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#7ff5ea" />
+                  <stop offset="1" stop-color="#3b82f6" />
+                </linearGradient>
+                <radialGradient id="tf" cx=".4" cy=".3" r=".8">
+                  <stop offset="0" stop-color="#3de0d0" stop-opacity=".22" />
+                  <stop offset="1" stop-color="#3de0d0" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+              <!-- crown outline -->
+              <path class="t-outline" d="M150 30c-26 0-36-12-66-12-38 0-60 30-60 76 0 40 14 64 22 96 10 42 8 96 30 124 12 15 28 6 32-18 6-36 12-78 42-78s36 42 42 78c4 24 20 33 32 18 22-28 20-82 30-124 8-32 22-56 22-96 0-46-22-76-60-76-30 0-40 12-66 12z" fill="url(#tf)" stroke="url(#tg)" stroke-width="2.4"/>
+              <!-- mesh lines -->
+              <g class="t-mesh" stroke="#3de0d0" stroke-opacity=".35" stroke-width="1">
+                <path d="M34 80c40 14 80 18 116 18s76-4 116-18"/>
+                <path d="M30 120c44 14 84 20 120 20s76-6 120-20"/>
+                <path d="M42 162c38 12 74 16 108 16s70-4 108-16"/>
+                <path d="M54 206c30 8 62 12 96 12s66-4 96-12"/>
+                <path d="M84 20c-6 60-4 120 8 190"/>
+                <path d="M150 30c0 50 0 100 0 150"/>
+                <path d="M216 20c6 60 4 120-8 190"/>
+                <path d="M40 60c20 50 34 90 50 150"/>
+                <path d="M260 60c-20 50-34 90-50 150"/>
+              </g>
+              <!-- nodes -->
+              <g fill="#7ff5ea">
+                <circle class="node" cx="150" cy="98" r="3"/>
+                <circle class="node" cx="84" cy="92" r="2.5"/>
+                <circle class="node" cx="216" cy="92" r="2.5"/>
+                <circle class="node" cx="150" cy="140" r="3"/>
+                <circle class="node" cx="96" cy="176" r="2.5"/>
+                <circle class="node" cx="204" cy="176" r="2.5"/>
+              </g>
+            </svg>
+            <div class="scan-line"></div>
+            <div class="readout r1"><b>CAD/CAM</b><span>Zirconia · 0.02 mm</span></div>
+            <div class="readout r2"><b>STL</b><span>Listo para fresado</span></div>
+            <div class="readout r3"><b>3D PRINT</b><span>Resina · PMMA</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Zirconia monolítica</span><i>✦</i><span>Disilicato de litio</span><i>✦</i><span>Resina impresa 3D</span><i>✦</i><span>Cromo cobalto</span><i>✦</i><span>Titanio</span><i>✦</i><span>Admodum</span><i>✦</i><span>Alineadores</span><i>✦</i><span>Guías quirúrgicas</span><i>✦</i>
+          <span>Zirconia monolítica</span><i>✦</i><span>Disilicato de litio</span><i>✦</i><span>Resina impresa 3D</span><i>✦</i><span>Cromo cobalto</span><i>✦</i><span>Titanio</span><i>✦</i><span>Admodum</span><i>✦</i><span>Alineadores</span><i>✦</i><span>Guías quirúrgicas</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALORES -->
+    <section class="section" id="valores">
+      <div class="container">
+        <div class="values">
+          <article class="value reveal">
+            <div class="v-icon"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg></div>
+            <span class="v-num">01</span>
+            <h3>Calidad</h3>
+            <p>Materiales de primera línea y protocolos estrictos en cada etapa.</p>
+          </article>
+          <article class="value reveal">
+            <div class="v-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 1v4M12 19v4M1 12h4M19 12h4"/></svg></div>
+            <span class="v-num">02</span>
+            <h3>Precisión</h3>
+            <p>Tecnología digital y control en cada detalle del trabajo.</p>
+          </article>
+          <article class="value reveal">
+            <div class="v-icon"><svg viewBox="0 0 24 24"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M12 12l9-5M12 12v10M12 12L3 7"/></svg></div>
+            <span class="v-num">03</span>
+            <h3>Innovación</h3>
+            <p>Flujo CAD/CAM e impresión 3D en constante actualización.</p>
+          </article>
+          <article class="value reveal">
+            <div class="v-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <span class="v-num">04</span>
+            <h3>Compromiso</h3>
+            <p>Cumplimiento de plazos en cada rehabilitación entregada.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="section" id="nosotros">
+      <div class="container about">
+        <div class="about-head reveal">
+          <p class="tag">/// ¿Quiénes somos? ///</p>
+          <h2>Un laboratorio<br /><span class="grad">100% digital.</span></h2>
+        </div>
+        <div class="about-body reveal">
+          <p class="big">KR-DENT es un laboratorio dental especializado en tecnología <strong>CAD/CAM</strong> e <strong>impresión 3D</strong>, enfocado en entregar rehabilitaciones de alta precisión y estética para clínicas y profesionales de la salud oral.</p>
+          <p>Trabajamos con materiales de primera línea y protocolos estrictos, cumpliendo los plazos acordados en cada caso.</p>
+          <div class="about-stats">
+            <div><b>CAD/CAM</b><span>Fresado de precisión</span></div>
+            <div><b>3D</b><span>Impresión en resina</span></div>
+            <div><b>STL · PLY</b><span>Escáner intraoral o modelo</span></div>
+          </div>
+          <p class="pill-note"><span class="dot"></span>Retiro y entrega en Santiago y comunas aledañas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARANCEL -->
+    <section class="section" id="arancel">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="tag">/// Arancel de prestaciones ///</p>
+          <h2>Valores claros,<br /><span class="grad">por material.</span></h2>
+          <p class="muted">Valores expresados en pesos chilenos (CLP). Arancel vigente · sujeto a modificación previo aviso.</p>
+        </div>
+
+        <div class="tabs reveal" role="tablist" id="priceTabs">
+          <button role="tab" class="tab active" data-tab="zirconia">Zirconia</button>
+          <button role="tab" class="tab" data-tab="disilicato">Disilicato de litio</button>
+          <button role="tab" class="tab" data-tab="resina">Resina 3D</button>
+          <button role="tab" class="tab" data-tab="cromo">Cromo níquel / cobalto</button>
+          <button role="tab" class="tab" data-tab="titanio">Titanio colado</button>
+          <button role="tab" class="tab" data-tab="removible">Prótesis removible</button>
+          <button role="tab" class="tab" data-tab="ortodoncia">Ortodoncia</button>
+        </div>
+
+        <div class="panels reveal">
+          <!-- Zirconia -->
+          <div class="panel active" data-panel="zirconia">
+            <div class="panel-title"><h3>Zirconia monolítica</h3><span class="badge">Convencional vs Digital</span></div>
+            <table class="price-table cols-3">
+              <thead><tr><th>Prestación</th><th>Convencional</th><th class="hl">Digital</th></tr></thead>
+              <tbody>
+                <tr><td>PFU monolítica sobre implante cementada</td><td>$ 90.450</td><td class="hl">$ 85.100</td></tr>
+                <tr><td>PFU monolítica sobre implante atornillada <em>(sin Ti-Base)</em></td><td>$ 97.900</td><td class="hl">$ 92.550</td></tr>
+                <tr><td>Corona / Incrustación / Carilla monolítica</td><td>$ 69.150</td><td class="hl">$ 63.850</td></tr>
+                <tr><td>Casquete zirconia <em>(sin estratificar)</em></td><td>$ 51.050</td><td class="hl">$ 45.750</td></tr>
+                <tr><td>Puente Maryland <em>(por pieza)</em></td><td>$ 148.950</td><td class="hl">$ 138.300</td></tr>
+                <tr><td>Encía cerámica <em>(por pieza)</em></td><td>$ 19.050</td><td class="hl">$ 17.000</td></tr>
+                <tr><td>Tornillo protésico</td><td>$ 14.900</td><td class="hl">$ 14.900</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Disilicato -->
+          <div class="panel" data-panel="disilicato">
+            <div class="panel-title"><h3>Disilicato de litio <em>(fresado)</em></h3><span class="badge">Convencional vs Digital</span></div>
+            <table class="price-table cols-3">
+              <thead><tr><th>Prestación</th><th>Convencional</th><th class="hl">Digital</th></tr></thead>
+              <tbody>
+                <tr><td>Corona / Carilla / Incrustación / Endocrown</td><td>$ 90.000</td><td class="hl">$ 85.500</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Resina -->
+          <div class="panel" data-panel="resina">
+            <div class="panel-title"><h3>Resina impresa 3D</h3><span class="badge">Impresión 3D</span></div>
+            <table class="price-table">
+              <thead><tr><th>Prestación</th><th>Valor</th></tr></thead>
+              <tbody>
+                <tr><td>Corona / Carilla / Incrustación / Endocrown</td><td>$ 47.900</td></tr>
+                <tr><td>Provisorio PMMA <em>(por pieza)</em></td><td>$ 17.000</td></tr>
+                <tr><td>Guía quirúrgica <em>(por arcada)</em></td><td>$ 58.500</td></tr>
+                <tr><td>Modelo de estudio</td><td>$ 12.750</td></tr>
+                <tr><td>Modelo con análogo <em>(por implante)</em></td><td>$ 9.600</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Cromo -->
+          <div class="panel" data-panel="cromo">
+            <div class="panel-title"><h3>Cromo níquel / Cromo cobalto</h3><span class="badge">Metal</span></div>
+            <table class="price-table">
+              <thead><tr><th>Prestación</th><th>Valor</th></tr></thead>
+              <tbody>
+                <tr><td>PFU sobre implante <em>(sin UCLA)</em></td><td>$ 85.500</td></tr>
+                <tr><td>Corona cementada · Sustitución</td><td>$ 66.500</td></tr>
+                <tr><td>Corona cementada</td><td>$ 57.000</td></tr>
+                <tr><td>Pilar personalizado</td><td>$ 52.250</td></tr>
+                <tr><td>Incrustación inlay / onlay</td><td>$ 23.750</td></tr>
+                <tr><td>Perno muñón</td><td>$ 23.750</td></tr>
+                <tr><td>Perno muñón bipartito / pasante</td><td>$ 30.400</td></tr>
+                <tr><td>Estructura tipo Admodum · metal cromo cobalto</td><td>$ 385.000</td></tr>
+                <tr><td>Prótesis tipo Admodum terminada (marche) · cromo cobalto, <em>hasta 6 implantes</em></td><td>$ 470.000</td></tr>
+                <tr><td>Barra Dolder</td><td>$ 589.000</td></tr>
+                <tr><td>Barra Toronto</td><td>$ 342.000</td></tr>
+                <tr><td>Barra Blender <em>(solo barra)</em></td><td>$ 570.000</td></tr>
+                <tr><td>Cubetilla tipo Ripol</td><td>$ 9.500</td></tr>
+                <tr><td>Preparación de pilar</td><td>$ 14.250</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Titanio -->
+          <div class="panel" data-panel="titanio">
+            <div class="panel-title"><h3>Titanio colado</h3><span class="badge">Metal</span></div>
+            <table class="price-table">
+              <thead><tr><th>Prestación</th><th>Valor</th></tr></thead>
+              <tbody>
+                <tr><td>PFU titanio cementada / sustitución</td><td>$ 90.250</td></tr>
+                <tr><td>Perno muñón titanio</td><td>$ 39.900</td></tr>
+                <tr><td>Perno bipartito</td><td>$ 42.750</td></tr>
+                <tr><td>Estructura tipo Admodum · metal titanio</td><td>$ 385.000</td></tr>
+                <tr><td>Prótesis tipo Admodum terminada (marche) · titanio</td><td>$ 470.000</td></tr>
+                <tr><td>Barra Dolder titanio</td><td>$ 399.000</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Removible -->
+          <div class="panel" data-panel="removible">
+            <div class="panel-title"><h3>Prótesis removible</h3><span class="badge">Removible</span></div>
+            <table class="price-table">
+              <thead><tr><th>Prestación</th><th>Valor</th></tr></thead>
+              <tbody>
+                <tr><td>Prótesis total acrílica <em>(por arcada)</em></td><td>$ 75.000</td></tr>
+                <tr><td>Prótesis parcial removible metálica</td><td>$ 171.000</td></tr>
+                <tr><td>Prótesis flexible <em>(por arcada)</em></td><td>$ 120.000</td></tr>
+                <tr><td>Rebase blando <em>(por arcada)</em></td><td>$ 30.000</td></tr>
+                <tr><td>Reparación <em>(por diente)</em></td><td>$ 9.500</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Ortodoncia -->
+          <div class="panel" data-panel="ortodoncia">
+            <div class="panel-title"><h3>Ortodoncia</h3><span class="badge">Digital</span></div>
+            <table class="price-table">
+              <thead><tr><th>Prestación</th><th>Valor</th></tr></thead>
+              <tbody>
+                <tr><td>Modelo de estudio ortodoncia</td><td>$ 11.400</td></tr>
+                <tr><td>Set up digital</td><td>$ 23.750</td></tr>
+                <tr><td>Alineadores <em>(por arcada)</em></td><td>$ 61.750</td></tr>
+                <tr><td>Retenedor termoformado</td><td>$ 19.000</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISEÑO DIGITAL -->
+    <section class="section" id="diseno">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="tag">/// Solo diseño digital ///</p>
+          <h2>Diseñamos,<br /><span class="grad">tú produces.</span></h2>
+          <p class="muted">Valores de diseño expresados en dólares (USD). Conversión a pesos según el tipo de cambio del día de facturación.</p>
+        </div>
+
+        <div class="design-grid">
+          <div class="card reveal">
+            <p class="card-label">Diseño sobre diente e implante</p>
+            <ul class="price-list">
+              <li><span>Corona sobre diente <em>(por unidad)</em></span><b>6 USD</b></li>
+              <li><span>Corona sobre implante · Ti-Base <em>(por unidad)</em></span><b>8 USD</b></li>
+              <li><span>Encerado diagnóstico <em>(por pieza)</em></span><b>6 USD</b></li>
+              <li><span>Provisorio <em>(por pieza)</em></span><b>6 USD</b></li>
+            </ul>
+          </div>
+
+          <div class="card card-feature reveal">
+            <span class="ribbon">Precio especial</span>
+            <p class="card-label">Arcada completa</p>
+            <div class="arch">
+              <div>
+                <span class="arch-name">Sobre dientes</span>
+                <span class="arch-price">75<small>USD</small></span>
+                <span class="arch-note">14 unidades · ahorro aprox. de 9 USD</span>
+              </div>
+              <div>
+                <span class="arch-name">Sobre implantes</span>
+                <span class="arch-price">95<small>USD</small></span>
+                <span class="arch-note">Precio preferencial por volumen</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <p class="card-label">Diseño de prótesis removible</p>
+            <ul class="price-list">
+              <li><span>Diseño de prótesis total <em>(por arcada)</em></span><b>$ 20.000</b></li>
+              <li><span>Diseño de prótesis parcial <em>(por arcada)</em></span><b>$ 15.000</b></li>
+              <li><span>Diseño de cucharilla individual <em>· 1 a 3 piezas</em></span><b>$ 10.000</b></li>
+            </ul>
+            <p class="card-foot">Diseño digital entregado en archivo STL, listo para impresión 3D o fresado.</p>
+          </div>
+
+          <div class="card reveal">
+            <p class="card-label">Estructuras</p>
+            <ul class="price-list">
+              <li><span>Diseño de barra para Admodum <em>(se cobra por implante)</em></span><b>$ 10.000 <small>/ implante</small></b></li>
+              <li><span>Separación en Blender</span><b>$ 20.000</b></li>
+            </ul>
+            <div class="implant-calc">
+              <p class="card-foot">Ejemplos de barra Admodum</p>
+              <div class="calc-row">
+                <button class="calc-btn" data-n="4">4 implantes</button>
+                <button class="calc-btn active" data-n="6">6 implantes</button>
+              </div>
+              <div class="calc-out">
+                <div class="implants" id="implants"></div>
+                <b id="calcTotal">$ 60.000</b>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cómo trabajamos -->
+        <div class="workflow">
+          <h3 class="wf-title reveal">Cómo trabajamos el diseño</h3>
+          <ol class="steps">
+            <li class="step reveal">
+              <span class="step-n">01</span>
+              <h4>Recepción</h4>
+              <p>Recibimos archivos STL / PLY provenientes de escáner intraoral o de modelo.</p>
+            </li>
+            <li class="step reveal">
+              <span class="step-n">02</span>
+              <h4>Diseño + vista previa</h4>
+              <p>Entregamos el diseño en STL listo para producción, junto a una vista previa para su aprobación.</p>
+            </li>
+            <li class="step reveal">
+              <span class="step-n">03</span>
+              <h4>Ajuste incluido</h4>
+              <p>Se incluye una modificación sin costo sobre el diseño enviado a revisión.</p>
+            </li>
+            <li class="step reveal">
+              <span class="step-n">04</span>
+              <h4>Datos del caso</h4>
+              <p>Indicar sistema de implante, tipo de conexión y material a utilizar al enviar el caso.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASOS -->
+    <section class="section" id="casos">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="tag">/// Referencias de diseño ///</p>
+          <h2>Casos reales,<br /><span class="grad">flujo digital.</span></h2>
+          <p class="muted">Ejemplos reales de casos resueltos en nuestro flujo digital. Cada diseño se entrega en archivo STL listo para impresión 3D o fresado, con vista previa para la aprobación del profesional antes de producir.</p>
+        </div>
+        <div class="gallery">
+          <figure class="shot g1 reveal" data-full="assets/casos/caso-1.png">
+            <img src="assets/casos/caso-1.png" alt="Arcada completa sobre dientes, encerado digital en oclusión" loading="lazy" />
+            <figcaption><b>Arcada completa sobre dientes</b><span>Encerado digital en oclusión, vista frontal</span></figcaption>
+          </figure>
+          <figure class="shot g2 reveal" data-full="assets/casos/caso-2.png">
+            <img src="assets/casos/caso-2.png" alt="Prótesis híbrida sobre implantes, diseño monobloque" loading="lazy" />
+            <figcaption><b>Prótesis híbrida sobre implantes</b><span>Diseño monobloque, vista vestibular</span></figcaption>
+          </figure>
+          <figure class="shot g3 reveal" data-full="assets/casos/caso-3.png">
+            <img src="assets/casos/caso-3.png" alt="Diseño con modelo antagonista" loading="lazy" />
+            <figcaption><b>Diseño con modelo antagonista</b><span>Control de oclusión y espacio protésico</span></figcaption>
+          </figure>
+          <figure class="shot g4 reveal" data-full="assets/casos/caso-4.png">
+            <img src="assets/casos/caso-4.png" alt="Rehabilitación completa sobre implantes" loading="lazy" />
+            <figcaption><b>Rehabilitación completa sobre implantes</b><span>Montaje superior e inferior en oclusión</span></figcaption>
+          </figure>
+          <figure class="shot g5 reveal" data-full="assets/casos/caso-5.png">
+            <img src="assets/casos/caso-5.png" alt="Incrustaciones diseñadas en CAD y caso terminado" loading="lazy" />
+            <figcaption><b>Del diseño al resultado clínico</b><span>Incrustaciones diseñadas en CAD y el caso terminado en boca</span></figcaption>
+          </figure>
+        </div>
+        <div class="banner reveal">
+          <div>
+            <h3>¿Quieres ver tu caso así antes de producirlo?</h3>
+            <p>Envíanos el escaneo en STL o PLY y te devolvemos la propuesta de diseño para tu aprobación.</p>
+          </div>
+          <a href="mailto:kilmercadcam@gmail.com?subject=Propuesta%20de%20dise%C3%B1o" class="btn">Enviar escaneo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLAZOS -->
+    <section class="section" id="plazos">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="tag">/// Plazos de entrega ///</p>
+          <h2>Tiempos que<br /><span class="grad">puedes planificar.</span></h2>
+          <p class="muted">Los plazos están expresados en días hábiles y comienzan a contar desde la recepción conforme del trabajo en el laboratorio.</p>
+        </div>
+        <div class="timeline-grid">
+          <div class="card reveal">
+            <p class="card-label">Prótesis removible <em>· días hábiles</em></p>
+            <ul class="bars" data-max="13">
+              <li data-min="5" data-max="6"><span>Articulación</span><i></i><b>5 a 6 días</b></li>
+              <li data-min="5" data-max="6"><span>Terminación</span><i></i><b>5 a 6 días</b></li>
+              <li data-min="2" data-max="3"><span>Reparación</span><i></i><b>2 a 3 días</b></li>
+              <li data-min="11" data-max="13"><span>Base metálica</span><i></i><b>11 a 13 días</b></li>
+              <li data-min="5" data-max="6"><span>Prueba de cera en planos</span><i></i><b>5 a 6 días</b></li>
+              <li data-min="5" data-max="6"><span>Terminación de plano</span><i></i><b>5 a 6 días</b></li>
+              <li data-min="3" data-max="4"><span>Estampado</span><i></i><b>3 a 4 días</b></li>
+            </ul>
+          </div>
+          <div class="card reveal">
+            <p class="card-label">Prótesis fija <em>· días hábiles</em></p>
+            <ul class="bars" data-max="13">
+              <li data-min="4" data-max="5"><span>Metales</span><i></i><b>4 a 5 días</b></li>
+              <li data-min="5" data-max="6"><span>Cerámica y cerómero</span><i></i><b>5 a 6 días</b></li>
+              <li data-min="2" data-max="3"><span>Glaseado y terminación</span><i></i><b>2 a 3 días</b></li>
+              <li data-min="3" data-max="4"><span>Núcleo en zirconio</span><i></i><b>3 a 4 días</b></li>
+              <li data-min="3" data-max="4"><span>Coronas fresadas</span><i></i><b>3 a 4 días</b></li>
+              <li data-min="3" data-max="4"><span>Inlay / carillas fresadas</span><i></i><b>3 a 4 días</b></li>
+            </ul>
+          </div>
+        </div>
+        <div class="alert reveal">
+          <span class="alert-clock">12:00</span>
+          <p>Toda entrega pasadas las <strong>12:00 hrs</strong> se considera hábil al día siguiente.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REQUISITOS -->
+    <section class="section" id="requisitos">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="tag">/// Requisitos para el ingreso de trabajos ///</p>
+          <h2>Un buen caso<br /><span class="grad">empieza con la orden.</span></h2>
+        </div>
+        <div class="req-grid">
+          <div class="card reveal">
+            <p class="card-label">Documentación y datos</p>
+            <ul class="checks">
+              <li>Todo trabajo debe ingresar con su orden de laboratorio completa, firmada y timbrada por el profesional tratante.</li>
+              <li>La orden debe indicar fecha, hora, nombre del paciente, profesional y clínica de destino, escrita con letra legible.</li>
+              <li>Detallar las especificaciones del caso: color, material, sistema de implante, tipo de conexión y observaciones relevantes.</li>
+              <li>Señalar claramente si el valor será cancelado por una institución o cargado a la cuenta personal del profesional.</li>
+            </ul>
+          </div>
+          <div class="card reveal">
+            <p class="card-label">Condiciones de servicio</p>
+            <ul class="checks">
+              <li>El ingreso del trabajo implica la aceptación del arancel vigente y de las presentes condiciones de servicio.</li>
+              <li>Los casos sin especificaciones se resolverán según el criterio técnico de nuestro equipo.</li>
+              <li>El laboratorio no se responsabiliza por trabajos enviados por método directo o sin su orden asociada.</li>
+              <li>Los archivos digitales deben enviarse en STL / PLY, identificados con el nombre del paciente y del profesional.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta" id="contacto">
+      <div class="container">
+        <div class="cta-box reveal">
+          <p class="tag">/// Contáctanos ///</p>
+          <h2>¿Necesitas una cotización<br />o <span class="grad">asesoría técnica?</span></h2>
+          <p class="muted">Escríbenos y te respondemos a la brevedad.</p>
+          <a href="mailto:kilmercadcam@gmail.com" class="btn btn-lg">kilmercadcam@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#inicio" class="brand">
+        <span class="brand-mark">KR</span>
+        <span class="brand-text">KR-DENT<small>Laboratorio dental</small></span>
+      </a>
+      <p class="muted">Laboratorio dental · CAD/CAM · Impresión 3D</p>
+      <p class="muted small">© <span id="year"></span> KR-DENT. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" aria-label="Cerrar">×</button>
+    <img alt="" />
+    <p class="lb-cap"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
